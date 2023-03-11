@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "213405692315",
+    "firebase_url": "https://blinovahandmade-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "blinovahandmade",
+    "storage_bucket": "blinovahandmade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213405692315:android:89286c61af78902927713e",
+        "android_client_info": {
+          "package_name": "com.example.blinovahandmade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213405692315-hvk276e17tutbg53li5daa4f6ndvma0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbbU4n-k8gHmUpSfCVgq6LUhQe1HExkcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213405692315-hvk276e17tutbg53li5daa4f6ndvma0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

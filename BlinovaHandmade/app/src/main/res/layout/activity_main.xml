@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/homepage"
+    tools:context=".MainActivity">
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/nav_host_fragment_container"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="810dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bottomNav"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="parent"-->
+
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:navGraph="@navigation/nav_menu"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawingCacheQuality="auto"
+        android:indeterminate="true"
+        android:indeterminateDuration="3200"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@color/app_theme_light"
+        android:progress="@integer/material_motion_duration_short_2"
+        android:progressBackgroundTint="#B388FF"
+        android:progressDrawable="@color/purple_500"
+        android:progressTint="@color/app_theme_dark"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:secondaryProgressTint="@color/app_theme_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fira_sans_condensed"
+        android:text="Категории"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarId" />
+
+    <ImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="136dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMain"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_sans_condensed"
+        android:text="Фенечки"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgCategory"
+        app:layout_constraintStart_toStartOf="@+id/imgCategory"
+        app:layout_constraintTop_toBottomOf="@+id/imgCategory" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgBtn"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/app_theme_light"
+        android:src="@drawable/photo_2023_02_16_21_46_12"
+        app:civ_border_color="@color/app_theme_light"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvMain"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarId" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"
+        android:background="@drawable/round_corner"
+        app:itemRippleColor="@color/app_theme_light"
+        app:itemIconSize="28dp"
+        app:labelVisibilityMode="selected"
+
+        tools:ignore="MissingConstraints"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
